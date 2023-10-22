@@ -12,15 +12,17 @@
         object-fit: cover;
       }
       #container {
-        max-width: 720px;  
+        max-width: 920px;  
         margin: 0 auto 0 auto;  <!-- Top:0, Left:auto, Bottom:0, Right:auto -->
       }
     </style>
   </head>
   <body>
-    <div id="container">
+    {% include 'nav.html' %}
     <h1 class="text-center mt-2 mb-4">MDFinance Carrers</h1>
     <img class="img-fluid" id="Banner" src="https://mdfinance-carrer-webiste--maulikdavra06.repl.co/static/Banner.jpeg" height="320">
+    <div id="container">
+
     <h2 class="text-center mt-2 mb-4">About MDFinance</h2>
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <h2 class="text-center mt-2 md-4">Open Positions</h2>
@@ -30,9 +32,9 @@
       {% endfor %}
     </div>
       <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2023, MDFinance</p>
+          <a href="mailto:hello@jovian.ai" class="btn btn-primary btn-lg">Contact Us</a>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
