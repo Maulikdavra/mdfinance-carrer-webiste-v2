@@ -1,28 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MDFinance carrers</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
-      #Banner {
-        height: 360px;
-        width: 100%;
-        object-fit: cover;
-      }
-      #container {
-        max-width: 920px;  
-        margin: 0 auto 0 auto;  <!-- Top:0, Left:auto, Bottom:0, Right:auto -->
-      }
-    </style>
+    <title>MDFinance Carrers</title>
+    {% include 'bootstrap.html' %}
   </head>
   <body>
-    {% include 'nav.html' %}
-    <h1 class="text-center mt-2 mb-4">MDFinance Carrers</h1>
-    <img class="img-fluid" id="Banner" src="https://mdfinance-carrer-webiste--maulikdavra06.repl.co/static/Banner.jpeg" height="320">
+     {% include 'nav.html' %}
+     {% include 'banner.html' %}
     <div id="container">
-
     <h2 class="text-center mt-2 mb-4">About MDFinance</h2>
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <h2 class="text-center mt-2 md-4">Open Positions</h2>
